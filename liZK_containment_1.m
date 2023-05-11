@@ -144,8 +144,8 @@ c=2;
 global A B F L1 L2
 a11=kron(eye(6),A)+c*kron(L1,B*F);
 a12=c*kron(L2,B*F);
-a21=kron(eye(3),A);
-a22=zeros(18,36);
+a22=kron(eye(3),A);
+a21=zeros(18,36);
 ydot=[a11 a12;
       a21 a22]*x;
 end
